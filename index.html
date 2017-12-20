@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Contactos</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Lista de Contactos</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      		<li>
+      			<a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+				<i class="material-icons right">add</i></a>
+			</li>
+			<li>
+				<button class="btn waves-effect waves-light" type="submit" name="action">
+				    <i class="material-icons right">search</i>
+				</button
+			</li>
+        <li><a href="collapsible.html">JQuery</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--<div class="container">
+        <div class="row">
+		    <div class="col l6">
+		    	<h1>Lista de Contactos</h1>
+		    </div>
+		    <div class="col l6">
+		    	<button class="btn waves-effect waves-light" type="submit" name="action">
+				    <i class="material-icons right">add</i>
+				</button>
+		        <button class="btn waves-effect waves-light" type="submit" name="action">
+				    <i class="material-icons right">search</i>
+				</button>
+				<div>
+					<h5>JQuery</h5>
+				</div>
+        	</div>
+     	</div>
+     </div>-->
+
+    <!--modal-->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Contactos</h4>
+      <!--hacer contactos-->
+      <div class="row">
+	    <form class="col s12">
+	      	<div class="row">
+	        	<div class="input-field col s6">
+		          	<i class="material-icons prefix">account_circle</i>
+		          	<input id="icon_prefix" type="text" class="name">
+		          	<label for="icon_prefix">First Name</label>
+	        	</div>
+	       
+	        	<div class="input-field col s6">
+			        <i class="material-icons prefix">phone</i>
+			        <input id="icon_telephone" type="tel" class="validate phone">
+			        <label for="icon_telephone">Telephone</label>
+	       		</div>
+	      	</div>
+	    </form>
+    <!--hacer mail-->
+	     <div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s12">
+		        	<i class="material-icons prefix">email</i>
+		          <input id="email" type="email" class="validate">
+		          <label for="email" data-error="wrong" data-success="right">Email</label>
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+		  </div>
+        
+     </div>
+     <!--Div que contendrá los datos de los conactos -->
+     <div id="cont"></div>
+   <!-- <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>-->
+      <div class="modal-footer">
+     	<a class="btn disabled" id="add">Agregar</a>
+     </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html
